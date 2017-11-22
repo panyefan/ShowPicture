@@ -1,4 +1,4 @@
-# 图片缩放、旋转、拖拽组件
+# React组件：图片缩放、旋转、全屏拖拽
 1、本组件的缩放、旋转的图标是使用了[antd](https://ant.design/components/icon-cn/)的UI图标
 
 2、使用方式：
