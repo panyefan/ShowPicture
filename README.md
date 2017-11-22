@@ -10,4 +10,4 @@ import {ShowPicture} from '../../../components/hsReact/UploadPicture/index';
 ```
 
 3、效果图
-![效果图](https://github.com/panyefan/ShowPicture/2017-11-22_110025.png)
+![效果图](https://github.com/panyefan/ShowPicture/blob/master/2017-11-22_110025.png)
