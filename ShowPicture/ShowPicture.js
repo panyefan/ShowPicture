@@ -193,14 +193,17 @@ export default class ShowPicture extends React.Component{
                 </div>
                 <span>{children}</span>
 
-                <img ref="showPreviewImageWrap" 
-                    onWheel={this.MousewheelRotateImg.bind(this)} 
-                    onMouseUp={this._mouseUp.bind(this)} 
-                    onMouseDown={this._mouseDown.bind(this)} 
-                    onMouseMove={this._mouseMove.bind(this)} 
-                    className="show_picture_image_wrap show_picture_image" 
-                    style={this.state.imgStyle} 
-                    src={previewImage} />
+				{
+					this.state.previewVisible && 
+					<img ref="showPreviewImageWrap" 
+						onWheel={this.MousewheelRotateImg.bind(this)} 
+						onMouseUp={this._mouseUp.bind(this)} 
+						onMouseDown={this._mouseDown.bind(this)} 
+						onMouseMove={this._mouseMove.bind(this)} 
+						className="show_picture_image_wrap show_picture_image" 
+						style={this.state.imgStyle} 
+						src={previewImage} />
+				}
 
                 <div className="show_picture_operationBtn" style={{display:previewVisible?'block':'none',position: 'fixed',zIndex: '1001'}}>
                     <Icon type="plus-circle-o" onClick={this.plusRotateImg}/>
